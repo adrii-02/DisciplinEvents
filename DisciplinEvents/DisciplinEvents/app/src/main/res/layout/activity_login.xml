@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/BeigeClaro_1"
+    tools:context=".activitys.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".activitys.Login">
+
+            <ImageView
+                android:id="@+id/logoStandard"
+                style="@style/imgStandardLogo"
+                android:layout_marginBottom="26dp"
+                android:contentDescription="@string/imagen_de_logo"
+                app:layout_constraintBottom_toTopOf="@+id/tltLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/ic_disciplin_events"/>
+
+            <TextView
+                android:id="@+id/tltLogin"
+                style="@style/tltStandard"
+                android:gravity="center_vertical"
+                android:text="@string/inicio_de_sesi_n"
+                app:layout_constraintBottom_toTopOf="@+id/txtLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logoStandard" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                style="@style/txtStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:gravity="center_vertical"
+                android:text="@string/te_damos_la_bienvenida"
+                app:layout_constraintBottom_toTopOf="@+id/subTltEmail"
+                app:layout_constraintStart_toStartOf="@id/tltLogin"
+                app:layout_constraintTop_toBottomOf="@+id/tltLogin" />
+
+            <TextView
+                android:id="@+id/subTltEmail"
+                style="@style/subTltStandard"
+                android:text="@string/email"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayoutEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                style="@style/textInputLayout"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="@+id/subTltEmail"
+                app:layout_constraintTop_toBottomOf="@+id/subTltEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputLayoutEmailContent"
+                    style="@style/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:hint="@string/email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/subTltPassword"
+                style="@style/subTltStandard"
+                android:gravity="center_vertical"
+                android:text="@string/contrase_a"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayoutPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:layout_constraintStart_toStartOf="@+id/subTltPassword"
+                app:layout_constraintTop_toBottomOf="@+id/subTltPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputLayoutPasswordContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contrase_a" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtRecuperar"
+                style="@style/txtStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:layout_marginBottom="32dp"
+                android:text="@string/olvidaste_tu_contrase_a"
+                app:layout_constraintBottom_toTopOf="@+id/btn_inicioSesion"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutPassword"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
+
+            <Button
+                android:id="@+id/btn_inicioSesion"
+                style="@style/btn"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="26dp"
+                android:text="@string/iniciar_sesi_n"
+                app:layout_constraintBottom_toTopOf="@+id/txt_NoTienesCuenta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txtRecuperar"
+                app:layout_constraintTop_toBottomOf="@+id/txtRecuperar" />
+
+            <TextView
+                android:id="@+id/txt_NoTienesCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+
+                android:gravity="center|center_horizontal"
+                android:minHeight="48dp"
+                android:text="@string/no_tienes_cuenta"
+                android:textAlignment="center"
+                android:textSize="@dimen/size_text2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

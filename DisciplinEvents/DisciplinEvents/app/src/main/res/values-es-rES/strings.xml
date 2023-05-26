@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DisciplinEvents</string>
+    <string name="inicio_de_sesi_n" translatable="false">Inicio de Sesión</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="logo_de_la_app" translatable="false">Logo de la app</string>
+    <string name="title_activity_login" translatable="false">Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">Primer Fragmento</string>
+    <string name="second_fragment_label" translatable="false">Segundo Fragmento</string>
+    <string name="next" translatable="false">Siguiente</string>
+    <string name="previous" translatable="false">Anterior</string>
+
+    <string name="hello_first_fragment" translatable="false">Hola primer fragmento</string>
+    <string name="hello_second_fragment" translatable="false">Hola segundo fragmento</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Contraseña</string>
+    <string name="action_sign_in" translatable="false">Iniciar sesión o registrarse</string>
+    <string name="action_sign_in_short" translatable="false">Iniciar sesión</string>
+    <string name="welcome" translatable="false">Bienvenido</string>
+    <string name="invalid_username" translatable="false">Nombre de usuario no válido</string>
+    <string name="invalid_password" translatable="false">La contraseña debe tener 5 caracteres</string>
+    <string name="login_failed" translatable="false">"Error al iniciar sesión"</string>
+    <string name="contrase_a" translatable="false">Contraseña</string>
+    <string name="imagen_de_logo" translatable="false">Imagen del logo</string>
+    <string name="te_damos_la_bienvenida" translatable="false">¡Te damos la bienvenida!</string>
+    <string name="olvidaste_tu_contrase_a" translatable="false">¿Olvidaste tu contraseña?</string>
+    <string name="iniciar_sesi_n" translatable="false">Iniciar Sesión</string>
+    <string name="no_tienes_cuenta" translatable="false">¿No tienes una cuenta? Regístrate</string>
+    <string name="ya_tienes_cuenta_inicia_sesi_n" translatable="false">¿Ya tienes cuenta? <b>Inicia Sesión</b></string>
+    <string name="introduce_el_correo_electr_nico_y_te_enviaremos_instrucciones_para_restablecer_la_contrase_a" translatable="false">Introduce el correo electrónico y te enviaremos instrucciones para restablecer la contraseña.</string>
+    <string name="nombre" translatable="false">Nombre</string>
+    <string name="apellidos" translatable="false">Apellidos</string>
+    <string name="repetir_contrase_a" translatable="false">Repetir Contraseña</string>
+    <string name="establecer_constrase_a" translatable="false">Establecer Contraseña</string>
+    <string name="hello_blank_fragment" translatable="false">Fragmento en blanco</string>
+    <string name="todo_el_dia" translatable="false">Todo el día</string>
+    <string name="fotoEvento" translatable="false">Foto del evento</string>
+    <string name="desde_las" translatable="false">Desde las</string>
+    <string name="hasta_las" translatable="false">Hasta las</string>
+    <string name="editar" translatable="false">Editar</string>
+    <string name="eliminar" translatable="false">Eliminar</string>
+    <string name="foto_perfil" translatable="false">Foto de perfil</string>
+    <string name="navigation_drawer_open" translatable="false">abrir</string>
+    <string name="navigation_drawer_close" translatable="false">cerrar</string>
+    <string name="g_nero" translatable="false">Género</string>
+    <string name="crear_evento" translatable="false">Crear evento</string>
+    <string name="descripci_n" translatable="false">Descripción</string>
+    <string name="crear_horario" translatable="false">Crear horario</string>
+</resources>

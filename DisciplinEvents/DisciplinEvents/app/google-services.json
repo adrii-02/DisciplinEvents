@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "932332410934",
+    "project_id": "disciplinevents-17c2f",
+    "storage_bucket": "disciplinevents-17c2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932332410934:android:47e5fa0009c44a3493a097",
+        "android_client_info": {
+          "package_name": "cat.copernic.disciplinevents2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932332410934-ges0mq8l649kc77sjvqfi9i72o7okbug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJkD75Ls3au-xVxR6UvZMBAUArDH0fruY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932332410934-ges0mq8l649kc77sjvqfi9i72o7okbug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

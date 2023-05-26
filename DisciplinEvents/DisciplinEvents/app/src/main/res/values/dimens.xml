@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DP-->
+    <!--RADIUS-->
+    <dimen name="btnStandardRadius">16dp</dimen>
+    <dimen name="StandardRadius">14dp</dimen>
+
+    <!--BUTTONS-->
+    <dimen name="btnStandardWidth">200dp</dimen>
+    <dimen name="btnStandardHeight">60dp</dimen>
+    <dimen name="btnSmallWidth">100dp</dimen>
+    <dimen name="btnSmalldHeight">40dp</dimen>
+
+    <!--ICONS-->
+    <dimen name="iconWidth">63dp</dimen>
+    <dimen name="iconHeight">55dp</dimen>
+    <dimen name="smallEye">32dp</dimen>
+
+    <!--MARGIN-->
+    <dimen name="default_margin">32dp</dimen>
+    <dimen name="smallMargin">26dp</dimen>
+    <dimen name="marginTop">12dp</dimen>
+
+    <!--LOGO-->
+    <dimen name="imgLogoStandardWidth">150dp</dimen>
+    <dimen name="imgLogoStandardHeight">150dp</dimen>
+
+    <!-- EDITTEXT -->
+    <dimen name="editTextWidth">300dp</dimen>
+    <dimen name="editTextHeight">50dp</dimen>
+
+    <!--SMALL EDITTEXT-->
+    <dimen name="editTextSmallWidth">200dp</dimen>
+    <dimen name="editTextSmallHeight">25dp</dimen>
+
+    <!-- TEXTINPUTLAYOUT -->
+    <dimen name="textInputLayoutHeight">50dp</dimen>
+
+    <!--BORDER-->
+    <dimen name="borderLogoStandard">3dp</dimen>
+
+    <!--SP-->
+    <!--TITLES-->
+    <dimen name="size_title1">34sp</dimen>
+    <dimen name="size_title2">20sp</dimen>
+    <dimen name="size_title3">18sp</dimen>
+
+    <!--TEXTS-->
+    <dimen name="size_text1">16sp</dimen>
+    <dimen name="size_text2">14sp</dimen>
+    <dimen name="size_text3">12sp</dimen>
+    <dimen name="mainMarginTop">60dp</dimen>
+
+
+</resources>

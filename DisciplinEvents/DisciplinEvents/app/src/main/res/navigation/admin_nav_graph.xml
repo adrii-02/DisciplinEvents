@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/RUsers">
+
+    <fragment
+        android:id="@+id/RUsers"
+        android:name="cat.copernic.disciplinevents.fragments.RUsers"
+        android:label="fragment_r_users"
+        tools:layout="@layout/fragment_r_users" />
+</navigation>

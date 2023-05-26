@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--MODO CLARO-->
+
+    <!--IMAGEVIEW LOGO-->
+    <style name="imgStandardLogo" parent="Widget.AppCompat.TextView">
+        <!--DIMEN-->
+        <item name="android:layout_width">@dimen/imgLogoStandardWidth</item>
+        <item name="android:layout_height">@dimen/imgLogoStandardHeight</item>
+    </style>
+
+    <!--BUTTON-->
+    <style name="btn" parent="Widget.AppCompat.Button">
+        <!--COLOR-->
+        <item name="android:backgroundTint">@color/azulClaro_2</item>
+        <item name="android:textColor">@color/white</item>
+
+        <!--DIMEN-->
+        <item name="android:radius">@dimen/btnStandardRadius</item>
+        <item name="android:layout_width">@dimen/btnStandardWidth</item>
+        <item name="android:layout_height">@dimen/btnStandardHeight</item>
+    </style>
+
+    <!--TITLE STANDARD-->
+    <style name="tltStandard" parent="Widget.AppCompat.TextView">
+        <!--COLOR-->
+        <item name="android:textColor">@color/black</item>
+
+        <!--DIMEN-->
+        <item name="android:layout_width">@dimen/editTextWidth</item>
+        <item name="android:layout_height">@dimen/editTextSmallHeight</item>
+        <item name="android:layout_marginTop">@dimen/smallMargin</item>
+        <item name="android:textSize">@dimen/size_title2</item>
+    </style>
+
+    <!--SUBTITLE STANDARD-->
+    <style name="subTltStandard" parent="Widget.AppCompat.TextView">
+        <!--COLOR-->
+        <item name="android:textColor">@color/black</item>
+
+        <!--DIMEN-->
+        <item name="android:layout_width">@dimen/editTextSmallWidth</item>
+        <item name="android:layout_height">@dimen/editTextSmallHeight</item>
+        <item name="android:layout_marginTop">@dimen/smallMargin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/size_text2</item>
+    </style>
+
+    <!--TEXTVIEW STANDARD-->
+    <style name="txtStandard" parent="Widget.AppCompat.TextView">
+        <!--COLOR-->
+        <item name="android:textColor">@color/black</item>
+
+        <!--DIMEN
+        <item name="android:layout_width">@dimen/editTextSmallWidth</item>
+        <item name="android:layout_height">@dimen/editTextSmallHeight</item>-->
+        <item name="android:textSize">@dimen/size_text1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--TEXTINPUTLAYOUT-->
+    <style name="textInputLayout" parent="Widget.AppCompat.TextView">
+        <!--COLOR-->
+        <item name="android:textColor">@color/black</item>
+
+        <!--DIMEN-->
+        <item name="android:layout_height">@dimen/textInputLayoutHeight</item>
+        <item name="android:radius">@dimen/StandardRadius</item>
+    </style>
+</resources>

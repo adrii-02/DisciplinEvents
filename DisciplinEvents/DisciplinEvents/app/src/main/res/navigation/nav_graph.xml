@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/REventos">
+
+    <!--NAV PRINCIPAL-->
+    <fragment
+        android:id="@+id/REventos"
+        android:name="cat.copernic.disciplinevents.fragments.REventos"
+        android:label="fragment_r_eventos"
+        tools:layout="@layout/fragment_r_eventos" >
+        <action
+            android:id="@+id/action_REventos_to_infoEvent"
+            app:destination="@id/infoEvent" />
+
+        <action
+            android:id="@+id/action_REventos_to_editInfoEvent"
+            app:destination="@id/editInfoEvent">
+        </action>
+    </fragment>
+
+    <!--NAV INFO EVENT TO PRINCIPAL-->
+    <fragment
+        android:id="@+id/infoEvent"
+        android:name="cat.copernic.disciplinevents.fragments.InfoEvent"
+        android:label="fragment_info_event"
+        tools:layout="@layout/fragment_info_event" >
+        <action
+            android:id="@+id/action_infoEvent_to_REventos"
+            app:destination="@id/REventos" />
+        <argument
+            android:name="currentEvent"
+            app:argType="cat.copernic.disciplinevents.model.Event" />
+        <action
+            android:id="@+id/action_infoEvent_to_editInfoTime"
+            app:destination="@id/editInfoTime" />
+        <action
+            android:id="@+id/action_infoEvent_to_createTime"
+            app:destination="@id/createTime" />
+    </fragment>
+
+    <!--NAV EDIT INFO EVENT TO PRINCIPAL-->
+    <fragment
+        android:id="@+id/editInfoEvent"
+        android:name="cat.copernic.disciplinevents.fragments.EditInfoEvent"
+        android:label="fragment_edit_info_event"
+        tools:layout="@layout/fragment_edit_info_event" >
+        <action
+            android:id="@+id/action_editInfoEvent_to_REventos"
+            app:destination="@id/REventos" />
+        <argument
+            android:name="currentEvent"
+            app:argType="cat.copernic.disciplinevents.model.Event" />
+        <action
+            android:id="@+id/action_editInfoEvent_to_editInfoTime"
+            app:destination="@id/editInfoTime" />
+    </fragment>
+
+    <!--NAV PROFILE USER TO EDIT PROFILE USER-->
+    <fragment
+        android:id="@+id/profileUser"
+        android:name="cat.copernic.disciplinevents.fragments.profileUser"
+        android:label="fragment_profile_user"
+        tools:layout="@layout/fragment_profile_user" >
+        <action
+            android:id="@+id/action_profileUser_to_editProfileUser"
+            app:destination="@id/editProfileUser" />
+    </fragment>
+
+    <!--NAV EDIT PROFILE USER TO PROFILE USER-->
+    <fragment
+        android:id="@+id/editProfileUser"
+        android:name="cat.copernic.disciplinevents.fragments.EditProfileUser"
+        android:label="EditProfileUser" >
+        <action
+            android:id="@+id/action_editProfileUser_to_profileUser"
+            app:destination="@id/profileUser" />
+        <argument
+            android:name="currentUser"
+            app:argType="cat.copernic.disciplinevents.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/createEvent"
+        android:name="cat.copernic.disciplinevents.fragments.CreateEvent"
+        android:label="fragment_create_event"
+        tools:layout="@layout/fragment_create_event" >
+        <action
+            android:id="@+id/action_createEvent_to_REventos"
+            app:destination="@id/REventos" />
+    </fragment>
+    <fragment
+        android:id="@+id/editInfoTime"
+        android:name="cat.copernic.disciplinevents.fragments.editInfoTime"
+        android:label="fragment_edit_info_time"
+        tools:layout="@layout/fragment_edit_info_time" >
+        <argument
+            android:name="currentTime"
+            app:argType="cat.copernic.disciplinevents.model.Time" />
+        <argument
+            android:name="currentEvent"
+            app:argType="cat.copernic.disciplinevents.model.Event" />
+        <action
+            android:id="@+id/action_editInfoTime_to_infoEvent"
+            app:destination="@id/infoEvent" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTime"
+        android:name="cat.copernic.disciplinevents.fragments.createTime"
+        android:label="fragment_create_time"
+        tools:layout="@layout/fragment_create_time" >
+        <argument
+            android:name="currentEvent"
+            app:argType="cat.copernic.disciplinevents.model.Event" />
+        <action
+            android:id="@+id/action_createTime_to_infoEvent"
+            app:destination="@id/infoEvent" />
+    </fragment>
+</navigation>
